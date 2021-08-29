@@ -1,0 +1,21 @@
+
+body {
+    width: 375px;
+    background-color: black;
+}
+
+.header-play {
+    background-color: black;
+}
+
+.container-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.menu-link {
+    display: none;
+}
