@@ -9,7 +9,7 @@
     <?php wp_head(); ?>
     <link rel="stylesheet" href="<?= get_template_directory_uri() . '/css/reset.css' ?>">
     <link rel="stylesheet" href="<?= get_template_directory_uri() . '/css/header.css' ?>">
-</
+    <link rel="stylesheet" href="<?= get_template_directory_uri() . '/css/' . $estiloPagina ?>">
 </head>
 
 <body <?php body_class(); ?>>
@@ -21,9 +21,9 @@
         <nav class="menu-link">
             <?php
             wp_nav_menu(
-                    array(
-                            'menu' => 'play-menu'
-                    )
+                array(
+                    'menu' => 'play-menu'
+                )
             );
             ?>
         </nav>
@@ -32,3 +32,4 @@
         <?php
         ?>
     </div>
+</header>
