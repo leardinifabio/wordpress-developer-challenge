@@ -1,0 +1,23 @@
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.main-home img {
+    width: 100%;
+    height: auto;
+}
+
+.conteudo-home-play {
+    margin: 0 1.5rem;
+    text-align: justify;
+    line-height: 1.3rem;
+}
+
+h2 {
+    color: red;
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+
+}
