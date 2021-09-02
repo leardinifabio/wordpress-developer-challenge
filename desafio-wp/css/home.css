@@ -17,8 +17,14 @@ body {
 }
 
 h2 {
-    color: red;
+    color: blue;
     font-size: 1.5rem;
     margin: 1.5rem 0;
+}
 
+.page-videos {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: auto;
 }

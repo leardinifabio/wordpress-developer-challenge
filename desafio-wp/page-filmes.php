@@ -14,7 +14,26 @@ if (have_posts()):
             echo '</div>';
         endwhile;
         ?>
-    </main>
 <?php
 endif;
+?>
+<?php
+$args = array('post_type' => 'videos');
+$query = new WP_Query($args);
+    if ($query->have_posts()):
+        echo '<div class="page-videos">';
+        echo '<ul class="lista-videos container-play">';
+        while ($query->have_posts()): $query->the_post();
+            echo '<li class="videos">';
+            the_post_thumbnail();
+            the_title('<p class="titulo-video">','</p>');
+            echo '</li>';
+        endwhile;
+        echo '</ul>';
+        echo '</div>';
+    endif;
+?>
+    </main>
+<?php
 require_once 'footer.php';
+?>
